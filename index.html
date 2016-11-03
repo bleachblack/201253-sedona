@@ -32,9 +32,9 @@
         <div class="intro">
             <img src="img/intro" alt="intro">
         </div>
-        <b>Седона – небольшой городок в Аризоне, заслуживающий большего!</b>
+        <h1>Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <section class="reason_1">
+        <section class="reason reason_town">
             <div class="reason_desc">
                 <b>Настоящий городок</b>
                 <p>№1</p>
@@ -44,22 +44,19 @@
         </section>
         <section class="features">
             <dev class="features-item1">
-                <img src="img/house" height="25" width="25" alt="Жилье">
-                <b>Жилье</b>
+                <h2>Жилье</h2>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </dev>
             <dev class="features-item2">
-                <img src="img/burger" height="25" width="25" alt="Еда">
-                <b>Еда</b>
+                <h2>Еда</h2>
                 <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </dev>
             <dev class="features-item3">
-                <img src="img/gift" height="25" width="25" alt="Сувениры">
-                <b>Сувениры</b>
+                <h2>Сувениры</h2>
                 <p>Не только китайского, но и местного производства!</p>
             </dev>
         </section>
-        <section class="reason_2">
+        <section class="reason reason_bridge">
             <div class="reason_desc">
                 <b>Там есть мост дьявола</b>
                 <p>№2</p>
@@ -90,24 +87,30 @@
             </button>
             <div class="holet_search_form">
                 <div class="check_in_date">
-                    <p>Дата заезда:</p>
+                    <label>
+                    Дата заезда:
                     <input type="date" value="2016-04-24">
+                    </label>
                 </div>
                 <div class="check_out_date">
-                    <p>Дата выезда:</p>
+                    <label>
+                    Дата выезда:
                     <input type="date" value="2016-07-04">
+                    </label>
                 </div>
                 <div class="adults">
-                    <p>Взрослые:</p>
+                    <label>
+                    Взрослые:
                     <input type="number" min="0" value="2">
+                    </label>
                 </div>
                 <div class="children">
-                    <p>Дети:</p>
+                    <label>
+                    Дети:
                     <input type="number" min="0" value="0">
+                    </label>
                 </div>
-                <button class="hotel_search_commit" type="button">
-                <p>Найти</p>
-            </button>
+                <input class="hotel_search_commit" type=submit value="Найти">
             </div>
         </section>
         <img src="img/map.jpg" width="768" height="384" alt="map">
@@ -116,13 +119,15 @@
         <div class="container">
             <p>#visitsedona</p>
             <section class="footer-social">
-                <a class="social-btn social-btn-vk" href="#"></a>
-                <a class="social-btn social-btn-fb" href="#"></a>
-                <a class="social-btn social-btn-youtube" href="#"></a>
+                <a class="social-btn social-btn-vk" href="#">VK</a>
+                <a class="social-btn social-btn-fb" href="#">Facebook</a>
+                <a class="social-btn social-btn-youtube" href="#">Youtube</a>
             </section>
             <section class="footer-copyright">
                 <p>Website by</p>
-                <img src="img/htmlacademy" alt="htmlacademy">
+                <a href="#">
+                    <img src="img/htmlacademy" alt="htmlacademy">
+                </a>
             </section>
         </div>
     </footer>
