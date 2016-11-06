@@ -19,3 +19,143 @@ h2 {
     font-weight: bold;
     color: black;
 }
+
+.container {
+    width: 768px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    width: 138px;
+    margin: 0 5px;
+}
+
+.menu_left_side {
+    float: left;
+    width: 310px;
+}
+
+.menu_right_side {
+    float: right;
+    width: 310px;
+}
+
+.intro {
+    margin-bottom: 56px;
+}
+
+.intro_text {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 35px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.reason_town {
+    width: 768px;
+    height: 256px;
+}
+
+.reason_town .reason_desc {
+    width: 256px;
+    float: left;
+    text-align: center;
+}
+
+.features {
+    text-align: center;
+}
+
+.features_item1 {
+    float: left;
+    width: 256px;
+    min-height: 330px;
+}
+
+.features_item2 {
+    float: left;
+    width: 256px;
+    min-height: 330px;
+}
+
+.features_item3 {
+    float: right;
+    width: 256px;
+    min-height: 330px;
+}
+
+.reason_bridge .reason_desc {
+    width: 256px;
+    float: right;
+    text-align: center;
+}
+
+.reason_size {
+    float: left;
+    width: 256px;
+    height: 256px;
+    text-align: center;
+}
+
+.reason_road {
+    float: left;
+    width: 256px;
+    height: 256px;
+    text-align: center;
+}
+
+.reason_tourists {
+    float: right;
+    width: 256px;
+    height: 256px;
+    text-align: center;
+}
+
+.booking {
+    text-align: center;
+    margin-top: 54px;
+}
+
+.hotel_search_button {
+    width: 568px;
+    height: 86px;
+}
+
+.hotel_search_form {
+    width: 569px;
+    height: 395px;
+    margin-left: 100px;
+}
+
+.hotel_search_commit {
+    width: 459px;
+    height: 58px;
+}
+
+.main_footer {
+    padding: 36px 0px;
+}
+
+.footer_hashtag {
+    width: 256px;
+    float: left;
+}
+
+.footer_social {
+    width: 256px;
+    float: left;
+}
+
+.footer_copyright {
+    width: 256px;
+    float: right;
+}
