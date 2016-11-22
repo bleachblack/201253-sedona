@@ -23,7 +23,7 @@ h2 {
 
 .container {
     width: 768px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .main_header {
@@ -37,8 +37,6 @@ h2 {
     left: 50%;
     transform: translateX(-50%);
 }
-
-.menu {}
 
 .menu ul {
     padding: 0px;
@@ -135,12 +133,13 @@ h2 {
 
 .features_item {
     width: 256px;
-    min-height: 330px;
     margin-top: 57px;
 }
 
 .features_item p {
     padding: 0px 47px;
+    margin-top: 23px;
+    margin-bottom: 0px;
 }
 
 .features_item h2 {
@@ -163,6 +162,14 @@ h2 {
     background: url("../img/gift.png") no-repeat center;
     background-position: top;
     float: right;
+}
+
+.features_item3 p {
+    padding: 0px 40px;
+}
+
+.reason_bridge {
+    margin-top: 62px;
 }
 
 .reason_bridge .reason_desc {
@@ -225,7 +232,13 @@ h2 {
     margin-top: 54px;
 }
 
+.booking h2 {
+    font-size: 30px;
+    line-height: 24px;
+}
+
 .hotel_search_button {
+    margin-top: 51px;
     width: 568px;
     height: 86px;
     background-color: #625045;
@@ -269,12 +282,50 @@ h2 {
     padding-left: 12px;
 }
 
+.check_in_date input {
+    margin-left: 20px;
+}
+
+.check_out_date input {
+    margin-left: 20px;
+}
+
+.adults {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.children {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 52px;
+}
+
+.adults input {
+    position: relative;
+    width: 114px;
+    margin-left: 40px;
+    padding: 0px;
+    text-align: center;
+}
+
+.children input {
+    position: relative;
+    width: 114px;
+    margin-left: 27px;
+    padding: 0px;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+}
+
 .main_footer {
     position: absolute;
     width: 768px;
-    top: 2645px;
-    background-color: white;
-    opacity: 0.9;
+    bottom: 0px;
+    background-color: rgba(255,255,255,0.9);
 }
 
 .footer_hashtag {
@@ -282,6 +333,10 @@ h2 {
     font-weight: bold;
     float: left;
     margin: 49px 60px;
+}
+
+.footer_hashtag p {
+    margin: 0px;
 }
 
 .social_btn {
@@ -292,6 +347,20 @@ h2 {
     font-size: 0px;
 }
 
+.social_btn_twitter {
+    background: url(../img/twitter.png) no-repeat center;
+    background-color: #71A4C9;
+}
+
+.social_btn_fb {
+    background: url(../img/facebook.png) no-repeat center;
+    background-color: #71A4C9;
+}
+
+.social_btn_youtube {
+    background: url(../img/youtube.png) no-repeat center;
+    background-color: #71A4C9;
+}
 .footer_social {
     float: left;
     margin: 36px 52px;
@@ -300,6 +369,15 @@ h2 {
 .footer_copyright {
     float: right;
     margin: 40px 30px;
+}
+
+.footer_copyright p {
+    float: left;
+    margin-right: 8px;
+}
+
+.footer_copyright img {
+    float: right;
 }
 
 .filters_main {
@@ -338,10 +416,6 @@ h2 {
 
 .housing_type {
     margin: 0px 46px;
-}
-
-.checkbox:not(checked) {
-    background: url(../img/unchecked.png) no-repeat center;
 }
 
 .price_per_day {
@@ -396,15 +470,15 @@ h2 {
 }
 
 .range_toggle:hover {
-  background: #1c4f80;
+    background: #1c4f80;
 }
 
 .range_toggle_min {
-  left: 0;
+    left: 0;
 }
 
 .range_toggle_max {
-  left: 80%;
+    left: 80%;
 }
 
 .price_controls label {
@@ -431,19 +505,17 @@ h2 {
 }
 
 .button_filters input {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
-
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .results_bar {
@@ -528,6 +600,10 @@ h2 {
     margin: 12px 0px;
 }
 
+.hotels :last-child {
+    margin-bottom: 5px;
+}
+
 .button_more {
     background-color: #71A4C9;
 }
@@ -569,4 +645,30 @@ h2 {
     background-color: #EFEFEF;
     padding: 6px 17px;
     margin-top: 38px;
+}
+
+.checkbox {
+    position: relative;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox input[type="checkbox"]+.checkbox_indicator {
+    background: url("../img/unchecked.png") no-repeat;
+    position: absolute;
+    width: 25px;
+    height: 22px;
+    left: 5px;
+}
+
+.checkbox input[type="checkbox"]:checked+.checkbox_indicator {
+    background: url("../img/checked.png") no-repeat;
+    position: absolute;
+    width: 25px;
+    height: 22px;
+    left: 5px;
 }
