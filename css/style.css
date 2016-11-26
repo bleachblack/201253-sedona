@@ -319,6 +319,16 @@ h2 {
     line-height: 26px;
     text-transform: inherit;
     margin-top: 54px;
+    outline: none;
+}
+
+.hotel_search_commit:hover {
+    background-color: #578DB4;
+}
+
+.hotel_search_commit:active {
+    color: #6A9EC1;
+    background-color: #4784B1;
 }
 
 .hotel_search_form input {
@@ -381,7 +391,7 @@ h2 {
 
 .check_out_date input {
     margin-left: 17px;
-    margin-bottom: 29px;
+    margin-bottom: 32px;
     position: relative;
 }
 
