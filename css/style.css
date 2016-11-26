@@ -121,7 +121,7 @@ h2 {
 }
 
 .reason_town img {
-    float:left;
+    float: left;
 }
 
 .reason_desc {
@@ -204,7 +204,7 @@ h2 {
 }
 
 .reason_bridge img {
-    float:left;
+    float: left;
 }
 
 .reason_bridge .reason_desc {
@@ -313,16 +313,19 @@ h2 {
     font-weight: bold;
     background-color: #EFEFEF;
     border: 0px;
-    width: 335px;
-    height: 38px;
+    width: 333px;
+    height: 33px;
     font: inherit;
     text-transform: uppercase;
     margin-bottom: 26px;
     padding-left: 12px;
+    outline: none;
+    border: solid 2px #EFEFEF
 }
 
 .hotel_search_form input:hover {
     background-color: #E6E6E6;
+    border: solid 2px #E6E6E6
 }
 
 .hotel_search_form input:focus {
@@ -337,6 +340,7 @@ h2 {
 .check_in_date input {
     margin-left: 20px;
     position: relative;
+    outline: none;
 }
 
 .calendar {
@@ -407,6 +411,7 @@ h2 {
     margin-left: 39px;
     padding: 0px;
     text-align: center;
+    outline: none;
 }
 
 .minus {
@@ -419,6 +424,7 @@ h2 {
     position: absolute;
     left: 170px;
     top: 198px;
+    outline: none;
 }
 
 .plus {
@@ -431,6 +437,7 @@ h2 {
     position: absolute;
     left: 245px;
     top: 198px;
+    outline: none;
 }
 
 .minus::before {
@@ -506,6 +513,24 @@ h2 {
 
 .children .plus::before {
     transform: rotate(90deg);
+}
+
+.minus:hover::before {
+    background-color: black;
+}
+
+.minus:active::before {
+    background-color: #71A4C9;
+}
+
+.plus:hover::before,
+.plus:hover::after {
+    background-color: black;
+}
+
+.plus:active::before,
+.plus:active::after {
+    background-color: #71A4C9;
 }
 
 footer {
@@ -600,29 +625,24 @@ footer {
 .footer_copyright {
     float: right;
     margin: 40px 32px;
-    margin-right: 152px;
 }
 
 .footer_copyright a {
     text-decoration: none;
-    position: relative;
     top: 8px;
     font: inherit;
     font-size: 14px;
     line-height: 26px;
     color: black;
-    
 }
 
 .footer_htmlacademy {
-    position: absolute;
-    left: 81px;
-    top: -33px;
+    display: inline-block;
+    vertical-align: middle;
     font-size: 0px;
     width: 115px;
     height: 40px;
     background: url(../img/htmlacademy.png) no-repeat center;
-    
 }
 
 .footer_htmlacademy:hover {
@@ -768,6 +788,7 @@ footer {
     font: inherit;
     background: none;
     border: none;
+    outline: none;
 }
 
 .button_filters input {
@@ -782,6 +803,11 @@ footer {
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
+}
+
+.button_filters input:hover {
+    background-color: white;
+    color: black;
 }
 
 .results_bar {
@@ -895,7 +921,6 @@ footer {
 .hotel_info {
     float: left;
 }
-
 
 .hotel_info h2 {
     margin: 0px;
@@ -1023,5 +1048,5 @@ footer {
 }
 
 .checkbox_indicator:disabled {
-    opacity: 0.5;
+    background: url("../img/disabled.png") no-repeat;
 }
