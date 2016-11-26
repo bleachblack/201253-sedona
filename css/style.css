@@ -380,7 +380,7 @@ h2 {
 }
 
 .check_out_date input {
-    margin-left: 20px;
+    margin-left: 17px;
     margin-bottom: 29px;
     position: relative;
 }
@@ -413,14 +413,14 @@ h2 {
 .children {
     display: inline-block;
     vertical-align: top;
-    margin-left: 52px;
+    margin-left: 48px;
 }
 
 .adults input {
     position: relative;
     width: 114px;
     margin: 0px;
-    margin-left: 39px;
+    margin-left: 35px;
     padding: 0px;
     text-align: center;
     outline: none;
