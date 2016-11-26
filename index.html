@@ -9,7 +9,7 @@
     <link href="css/normalize.css" rel="stylesheet">
 </head>
 
-<body class="container clearfix">
+<body class="container index_page clearfix">
     <header class="main_header clearfix">
         <div>
             <div class="logo">
@@ -38,10 +38,10 @@
             <img src="img/intro.jpg" width="768" height="512" alt="intro">
         </div>
         <div class="intro_text">
-            <h1>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+            <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
-        <section class="reason reason_town">
+        <section class="reason reason_town crearfix">
             <div class="reason_desc">
                 <h2>Настоящий городок</h2>
                 <p>- №1 -</p>
@@ -56,14 +56,14 @@
             </div>
             <div class="features_item features_item2">
                 <h2>Еда</h2>
-                <p>Всегда заказывайте фирменный бургер, <br> вы не разочаруетесь!</p>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
             <div class="features_item features_item3">
                 <h2>Сувениры</h2>
                 <p>Не только китайского, но и местного производства!</p>
             </div>
         </section>
-        <section class="reason reason_bridge">
+        <section class="reason reason_bridge clearfix">
             <div class="reason_desc">
                 <h2>Там есть <br>мост дьявола</h2>
                 <p>- №2 -</p>
@@ -71,22 +71,24 @@
             </div>
             <img src="img/reason_2.jpg" width="512" height="256" alt="Причина 2">
         </section>
-        <div class="last-reasons reason_size">
-            <h2>Небольшая площадь</h2>
-            <p>- №3 -</p>
-            <p>Все достопримечательности находятся очень близко</p>
+        <div class="last_reasons clearfix">
+            <div class="last-reasons reason_size">
+                <h2>Небольшая площадь</h2>
+                <p>- №3 -</p>
+                <p>Все достопримеча- тельности находятся очень близко</p>
+            </div>
+            <div class="last-reasons reason_road">
+                <h2>Красивая дорога</h2>
+                <p>- №4 -</p>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="last-reasons reason_tourists">
+                <h2>Мало<br>туристов</h2>
+                <p>- №5 -</p>
+                <p>Большинство едет в гранд каньон и толпится там</p>
+            </div>
         </div>
-        <div class="last-reasons reason_road">
-            <h2>Красивая дорога</h2>
-            <p>- №4 -</p>
-            <p>Ехать в Седону из Лас-Вегас совсем не скучно!</p>
-        </div>
-        <div class="last-reasons reason_tourists">
-            <h2>Мало<br>туристов</h2>
-            <p>- №5 -</p>
-            <p>Большинство едет в гранд каньон и толпится там</p>
-        </div>
-        <section class="booking">
+        <section class="booking clearfix">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
             <button class="hotel_search_button" type="button">
@@ -96,38 +98,38 @@
                 <div class="check_in_date">
                     <label>
                     Дата заезда:
-                    <input type="date" value="2016-04-24">
-                    <button class="calendar" type="button"></button>
+                    <input type="text" value="24 апреля 2016">
                     </label>
+                    <button class="calendar" type="button"></button>
                 </div>
                 <div class="check_out_date">
                     <label>
                     Дата выезда:
-                    <input type="date" value="2016-07-04">
-                    <button class="calendar" type="button"></button>
+                    <input type="text" value="4 июля 2016">
                     </label>
+                    <button class="calendar" type="button"></button>
                 </div>
                 <div class="adults">
                     <label>
                     Взрослые:
-                    <input type="number" min="0" value="2">
+                    <input type="text" value="2">
+                    </label>
                     <button class="minus" type="button"></button>
                     <button class="plus" type="button"></button>
-                    </label>
                 </div>
                 <div class="children">
                     <label>
                     Дети:
-                    <input type="number" min="0" value="0">
+                    <input type="text" value="0">
+                    </label>
                     <button class="minus" type="button"></button>
                     <button class="plus" type="button"></button>
-                    </label>
                 </div>
                 <button class="hotel_search_commit" type=button>Найти </button>
             </form>
         </section>
         <div class="map">
-        <img src="img/map.jpg" width="768" height="593" alt="map">
+            <img src="img/map.jpg" width="768" height="593" alt="map">
         </div>
     </main>
     <footer>
@@ -141,9 +143,9 @@
                 <a class="social_btn social_btn_youtube" href="#">Youtube</a>
             </section>
             <section class="footer_copyright">
-                <p>Website by</p>
                 <a href="#">
-                    <img src="img/htmlacademy.png" width="113" height="39" alt="htmlacademy">
+                    Website by
+                    <div class="footer_htmlacademy">htmlacademy</div>
                 </a>
             </section>
         </div>
